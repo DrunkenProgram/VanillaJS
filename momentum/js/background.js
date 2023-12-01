@@ -9,13 +9,13 @@ const images = [
     "8.jpg",
     "9.jpg",
     "10.jpg",
-    "11.jpg"
+    "11.jpg",
+    "12.jpg",
+    "13.jpg",
 ];
 
 const chosenImage = images[Math.floor(Math.random()*images.length)];
 
-const bgImage = document.createElement("img");
-
-bgImage.src = `img/${chosenImage}`;
-
-document.body.appendChild(bgImage)
+document.body.style.backgroundImage = `url(img/${chosenImage})`;
+document.body.style.backgroundSize = 'cover';
+document.body.style.backgroundPosition = 'center';
